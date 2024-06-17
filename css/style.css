@@ -21,13 +21,36 @@ header img{
     height: 100%;
     width: 100%;
 }
+/*titulos principales y textoss generales*/
+.general h2{
+    text-align: center;
+}
+.tituloindex h2 {
+    text-align: center;
+}
+.general p {
+    margin: 30px;}
+/*tamaño de carrusel*/
+.carousel {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.carousel-inner img {
+    width: 50%;
+    max-height: 500px;
+}
 
+.carousel-inner{
+ height: 500px;
+}
 /*tamaños: px; %;  viewport vh vw; em / rem; */
 .general{
     background-color: rgb(121, 76, 163);
 }
 .general img{
+    display: block;
     width: 50%;
+    margin: auto;
 }
 .tituloindex{
     background-color: rgb(180, 106, 250);
@@ -54,3 +77,10 @@ main{
 footer{
     grid-area: footer;
 }
+
+/*hoja de quienes somos*/
+/*hoja contacto*/
+.puntomapa {
+        display: grid;
+        place-items: center;
+      }
