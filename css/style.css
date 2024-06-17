@@ -1,0 +1,56 @@
+/*media queries responsive, a tantos px de pantalla modifica*/
+@media {max-width: 768px;
+ .grid-container{
+    grid-template-columns: 1fr 1fr;
+ }
+    
+}
+@media {max-width: 320px;}
+/*me sirve para que impacte en toda la fuente*/
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    height: 300px;
+    grid-area: header;
+    background-image: url(../assets/yogabanenr.jpg);
+    background-color: rgb(63, 233, 233)
+}
+header img{
+    height: 100%;
+    width: 100%;
+}
+
+/*tamaños: px; %;  viewport vh vw; em / rem; */
+.general{
+    background-color: rgb(121, 76, 163);
+}
+.general img{
+    width: 50%;
+}
+.tituloindex{
+    background-color: rgb(180, 106, 250);
+}
+
+/* GRID LAYOUT
+FILAS Y COLUMNAS*/
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(4, 0.5fr) ;
+    grid-template-rows: 0.5fr 2fr 1fr 1fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header header header header"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "main main main main"
+    "footer footer footer footer"
+    ;   
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+}
