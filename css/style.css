@@ -10,7 +10,10 @@
 *{
     font-family: "Montserrat", sans-serif;
 }
-
+/*menu principal*/
+.menu-principal{
+    text-align: center;
+}
 header{
     height: 300px;
     grid-area: header;
@@ -39,7 +42,6 @@ header img{
     width: 50%;
     max-height: 500px;
 }
-
 .carousel-inner{
  height: 500px;
 }
@@ -81,6 +83,6 @@ footer{
 /*hoja de quienes somos*/
 /*hoja contacto*/
 .puntomapa {
-        display: grid;
-        place-items: center;
-      }
+    display: block;
+    margin: auto;
+}
